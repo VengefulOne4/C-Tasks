@@ -2,6 +2,15 @@
 
 #include "stdio.h"
 
+// Pokúste sa vytvoriť v programovacom jazyku C program, 
+// ktorý nájde najväčší spoločný deliteľ (NSD) dvoch celých čísiel 
+// pomocou vyššie uvedeného Euklidovho algoritmu.
+// 
+// 
+// Príklad vstupu do programu: 52 16
+// Príklad výstupu z programu: 4
+
+
 int gcd(int a, int b) {
     int c;
     while (a != b) {

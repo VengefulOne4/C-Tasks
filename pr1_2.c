@@ -2,16 +2,28 @@
 
 #include <stdio.h>
 
+// 1.2
+// Vytvorte program v jazyku C, 
+// ktorý po vytvorení, zostavení a spustení vypíše do konzoly text 
+// "Ahoj, ake je cislo Tvojho kruzku? ". 
+// Číslo krúžku XXX, ktoré vloží do konzoly ako odpoveď programu jeho používateľ, 
+// si program uloží do premennej, na nový riadok vypíše text "Kruzok XXX je dobry v programovani." a skončí.
 
-int prva_uloha(int a, int b, int c)
+void cislo_kruzku()
 {
-	if (a > b)
-		if (a > c) return a;
-		else return c;
-	else if (b > c) return b;
-	else return c;
+	char ckruzku[10]; //premenna, znakove pole, pre ulozenia c. kruzku
+	printf("Ahoj, ake je cislo Tvojho kruzku? ");
+	scanf("%s", ckruzku); //nacitanie cisla kruzku od pouzivatela
+	printf("\nKruzok %s je dobry v programovani.\n", ckruzku); //vypisanie odpovede programu
 }
 
+int main() {
+	cislo_kruzku();
+
+	return 0;
+}
+
+/*
 int druha_uloha(int n)
 {
 	int sum = 0;
@@ -75,7 +87,7 @@ int siedma_uloha(int a, int b)
 int main()
 {
 	//prva_uloha(8, 15, 11);
-	//druha_uloha(5 /*, 2, 5, 4, 9, 8*/);
+	//druha_uloha(5, 2, 5, 4, 9, 8);
 	//tretia_uloha(5);
 	//stvrta_uloha(5, 3);
 	//piata_uloha(5, 2);
@@ -86,3 +98,4 @@ int main()
 	return 0;
 
 }
+*/

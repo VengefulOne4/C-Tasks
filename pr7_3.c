@@ -94,10 +94,10 @@ int main()
 	VypisMaticu(riadok, stlpec, D);
 
 	double priemerA = AritmPriemerPrvkovNaDiagonale(riadok, stlpec, A);
-	printf("\nPriemer je %f\n", priemerA);
+	printf("\nAritmeticky priemer prvkov na hlavney diagonale matice A je: %f\n", priemerA);
 
 	double priemerB = AritmPriemerPrvkovNaDiagonale(riadok, stlpec, B);
-	printf("\nPriemer je %f\n", priemerB);
+	printf("\nAritmeticky priemer prvkov na hlavney diagonale matice B je: %f\n", priemerB);
 
 	return 0;
 
