@@ -173,16 +173,16 @@ void VypisSpodTrojuholnik_do_dyn_pola(int dyn_r, int dyn_s, double** A, double**
 			printf("\n");
 		}
 	}
+	int z = 1;
+	 for (int i = 0; i < dyn_r; i++)
+		{
+			for (int j = 0; j < z; j++)
+				printf(" %.2lf\t", spod_truholn_dyn_pole_f[i][j]);
 
-	//  for (int i = 0; i < pocet_riadkovST; i++)
-	// 	{
-	// 		for (j = 0; j < pocty_prvkovST_f[z]; j++)
-	// 			printf(" %.2lf\t", spod_truholn_dyn_pole_f[i][j]);
+			printf("\n");
 
-	// 		printf("\n");
-
-	// 		z++;
-	// 	}
+			z++;
+		}
 }
 
 /* funkcia vynasobi matice A * B ulozene v 2-rozmernych dynamickych poliach a ich sucin zapise do
