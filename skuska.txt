@@ -1,0 +1,947 @@
+1.  1) Program je súbor inštrukcií, ktoré hovoria počítaču, čo má urobiť, aby vyriešil konkrétny problém alebo vykonal konkrétnu úlohu.
+    2) Zdrojový kód programu je ľudsky čitateľná forma programu napísaného v programovacom jazyku. Zdrojový kód zvyčajne píše programátor a slúži ako vstup pre kompilátor alebo interpret, ktorý ho prekladá na strojovo čitateľné inštrukcie.
+    3) Podprogram, známy aj ako funkcia alebo metóda, je pomenovaný blok kódu v rámci programu, ktorý vykonáva konkrétnu úlohu. Môže sa volať a vykonávať z rôznych častí programu, aby sa zabránilo duplicite kódu a zlepšila sa modularita.
+    4) Programátor je osoba, ktorá píše, navrhuje a udržiava počítačové programy. Programátori používajú programovacie jazyky na odovzdávanie inštrukcií počítaču a riešenie problémov.
+    5) Programovací jazyk je formálny jazyk so súborom syntaxe a sémantiky, ktorý sa používa na písanie počítačových programov. Poskytuje programátorom spôsob, ako vyjadriť svoje algoritmy a logiku vo formáte, ktorý je zrozumiteľný pre počítač.
+    6) Programátorské prostredie (Development Environment): prostredie, ktoré sa vzťahuje na nástroje a softvér, ktoré programátori používajú na vývoj, testovanie a ladenie programov. Patria sem integrované vývojové prostredia (IDE), editory kódu, kompilátory, ladiace programy a iné softvérové komponenty, ktoré uľahčujú proces programovania.
+    7) Algoritmus je presný popis definujúci postupnosť krokov, ktoré vedú od meniteľných vstupných údajov k potrebným výstupom. Pomocou alogoritmu môžeme definovať akýkoľvek determinovaný proces. (Príklady: Návod na obsluhu stroja, kucharská kniga a t.ď.)
+    8) Vývojový diagram je druh diagramu, ktorý slúži na grafické znázornenie jednotlivých krokov algoritmu, pracovného postupu alebo nejakého procesu.
+    9) Funkcia je jednotka kódu, ktorá je často definovaná svojou úlohou v rámci väčšej štruktúry kódu.
+    10)  Hlavné vlastnosti algoritmu
+        • jednoznačnosť
+        • všeobecnosť (hromadnosť)
+        • rezultatívnosť
+        • konečnosť
+        • elementárnosť
+
+         Doplnkové vlastnosti
+        • zrozumiteľnosť
+        • správnosť
+        • efektívnosť
+        • modifikovateľnosť
+        • štruktúrovanosť
+
+2. Programovací jazyk C je univerzálny vysokoúrovňový programovací jazyk, ktorý začiatkom 70. rokov 20. storočia vyvinul Dennis Ritchie v laboratóriách Bell Labs. Bol navrhnutý ako prenosný a efektívny jazyk na systémové programovanie, ale odvtedy sa široko používa na vývoj širokej škály aplikácií, od operačných systémov po vstavané systémy a webové aplikácie.
+
+V poskytnutej definícii sa na opis jazyka C používa niekoľko synoným. Vysvetlíme si ich bližšie:
+
+Jazyk vyššej úrovne: Jazyk vyššej úrovne označuje programovací jazyk, ktorý poskytuje vyššiu úroveň abstrakcie a v porovnaní s nízkoúrovňovými jazykmi je bližšie k ľudsky čitateľnej forme. Jazyk C sa považuje za jazyk vyššej úrovne, pretože abstrahuje od mnohých nízkoúrovňových detailov a poskytuje konštrukcie a syntax, ktoré sú čitateľnejšie a ľahšie sa s nimi pracuje.
+
+Systémový jazyk: Jazyk C je vhodný na programovanie systémových úloh, ako je napríklad vývoj operačných systémov, ovládačov zariadení a iných nízkoúrovňových softvérových komponentov, ktoré úzko spolupracujú so základným hardvérom. Jazyk C poskytuje funkcie, ako je priama manipulácia s pamäťou a jemná kontrola nad hardvérovými zdrojmi, vďaka čomu je vhodný na programovanie na systémovej úrovni.
+
+Štruktúrovaný jazyk: C je štruktúrovaný programovací jazyk, čo znamená, že podporuje koncepty štruktúrovaného programovania, ako sú modulárne programovanie, riadiace štruktúry (napríklad cykly a podmienky) a funkcie. Kladie dôraz na používanie štruktúrovaných programovacích konštrukcií s cieľom zlepšiť organizáciu, čitateľnosť a udržiavateľnosť kódu.
+
+"Blízko" k hardvéru: Jazyk C sa často označuje ako "blízky" hardvéru, pretože umožňuje priamu manipuláciu s pamäťou a nízkoúrovňové operácie. Poskytuje funkcie, ako sú ukazovatele, ktoré umožňujú efektívnu správu pamäte a priamy prístup k hardvérovým prostriedkom. Táto blízkosť k hardvéru robí z jazyka C výkonný jazyk pre úlohy, ktoré si vyžadujú jemnú kontrolu nad systémovými zdrojmi.
+
+Celkovo programovací jazyk C kombinuje vysokoúrovňové abstrakcie s nízkoúrovňovými možnosťami, vďaka čomu je univerzálny a široko používaný v rôznych oblastiach. Jeho flexibilita, efektívnosť a široká dostupnosť kompilátorov a knižníc prispeli k jeho trvalej popularite v programátorskej komunite.
+3. Výraz a priraďovací príkaz sú dva rôzne koncepty v programovaní. Tu je ich vysvetlenie:
+
+    Výraz je kombinácia operátorov, premenných, konštánt a funkcií, ktorá vyjadruje určitú hodnotu. Výrazy sa skladajú z operandov a operátorov, ktoré vykonávajú určité operácie nad operandmi. Výsledkom výrazu je hodnota, ktorú možno použiť na ďalšie výpočty alebo priradenie do premenných.
+
+    Príklady syntakticky korektných výrazov:
+
+    2 + 3 * 5 - 1
+    Tento výraz kombinuje operátory sčítania, násobenia a odčítania s konštantami. Výsledok bude hodnota 16.
+
+    x = y + 10
+    Tento výraz priradí hodnotu premennej y zvýšenú o 10 do premennej x.
+
+    Priraďovací príkaz je konštrukcia v programovacom jazyku, ktorá priradí hodnotu jednej premennej do druhej. Tento príkaz sa používa na aktualizáciu hodnoty premennej a ukladanie výsledkov výpočtov.
+
+    Príklady syntakticky korektných priraďovacích príkazov:
+
+    x = 10
+    Tento príkaz priradí hodnotu 10 do premennej x.
+
+    y = x + 5
+    Tento príkaz priradí hodnotu premennej x zvýšenú o 5 do premennej y.
+
+    z = (x + y) * 2
+    Tento príkaz priradí dvojnásobok súčtu hodnôt premenných x a y do premennej z.
+
+    Výraz a priraďovací príkaz sú teda dva rôzne koncepty. Výraz vyjadruje hodnotu, zatiaľ čo priraďovací príkaz slúži na priradenie hodnoty premennej. Výrazy sa často používajú v rôznych častiach programu, ako napríklad v podmienkach alebo pri volaní funkcií, zatiaľ čo priraďovacie príkazy slúžia na manipuláciu s hodnotami premenných a aktualizáciu stavu programu.
+4. V jazyku C existujú štandardné funkcie a prúdy pre prácu so vstupom a výstupom Dve hlavné štandardné prúdy, ktoré sa používajú na vstup a výstup, sú "stdin" a "stdout".
+    stdin: Je štandardný vstupný prúd, ktorý slúži na čítanie dát z klávesnice alebo iného vstupného zariadenia.
+    stdout: Je štandardný výstupný prúd, ktorý slúži na zobrazovanie dát na obrazovke alebo ich odosielanie do výstupného zariadenia.
+    Štandardný vstup a výstup môžu byť realizované pomocou niekoľkých štandardných funkcií v jazyku C:
+
+    scanf(): Táto funkcia sa používa na načítanie vstupných hodnôt zo štandardného vstupu (stdin) podľa zadaného formátu.
+    Príklad:
+    
+        int age;
+        printf("Enter your age: ");
+        scanf("%d", &age);
+    
+    
+    Tento kód požiada používateľa, aby zadal svoj vek zo štandardného vstupu. Hodnota je uložená do premennej age prostredníctvom funkcie scanf().
+
+    printf(): Táto funkcia sa používa na formátovaný výstup hodnôt na štandardný výstup (stdout).
+    Príklad:
+
+
+        int number = 10;
+        printf("The number is: %d\n", number);
+    
+    
+    Tento kód zobrazí na štandardný výstup (obrazovka) správu "The number is: 10" s hodnotou premennej number formátovanej pomocou %d.
+
+    Tieto sú len základné príklady využitia funkcií scanf() a printf(). Existuje viacero funkcií pre štandardný vstup a výstup, ako napríklad gets(), puts(), getchar(), putchar() a ďalšie, ktoré umožňujú prácu so znakmi, reťazcami a inými typmi dát. Použitie konkrétnej funkcie závisí od požiadaviek a formátovania vstupu a výstupu v programe.
+
+5. 
+    Identifikátor je v jazyku C názov, ktorý sa používa na označenie premenných, funkcií, typov, štruktúr a iných programových entít. Identifikátor je použitý na identifikáciu a odkazovanie na daný prvok v programe.
+
+    Vlastnosti identifikátorov:
+
+    - Identifikátory môžu obsahovať písmená (veľké a malé), čísla a znaky podčiarkovníka.
+    - Začínajú písmenom alebo podčiarkovníkom.
+    - Identifikátory rozlišujú veľké a malé písmená (sú case-sensitive).
+    - Nemôžu byť rezervovanými slovami jazyka C (napr. int, for, if, atď.).
+    - Maximálna dĺžka identifikátorov je zväčša obmedzená na určený počet znakov (často 31 alebo 63).
+    - Rozdiel medzi definíciou a deklaráciou premennej:
+
+    Deklarácia premennej informuje kompilátor o existencii premennej a jej dátovom type, ale nealokuje pre ňu žiadnu pamäť.
+
+        extern int x; // Deklarácia premennej x
+    
+    
+    Definícia premennej okrem deklarácie aj alokuje pamäť pre premennú.
+    
+        int x = 5; // Definícia premennej x s počiatočnou hodnotou 5
+    
+    Rozdiel medzi identifikátorom, operátorom a operandom:
+
+        - Identifikátor: Je názov, ktorý slúži na označenie programových entít (premenné, funkcie, typy, atď.) a umožňuje odkaz na ne.
+    
+            int sum; // Identifikátor "sum" pre označenie premennej typu int
+        
+        - Operátor: Je symbol, ktorý vykonáva operáciu nad operandmi a vyjadruje určitú akciu alebo vzťah medzi nimi.
+    
+            int result = x + y; // Operátor "+" slúži na sčítanie operandov x a y
+        
+        - Operand: Je hodnota, na ktorej sa vykonáva operácia vyjadrená operátorom.
+    
+            int x = 5; // Hodnota 5 je operandom pri definícii premennej x
+    
+    
+    Výrazy a príkazy v jazyku C zahŕňajú kombináciu identifikátorov, operátorov a operandov. Identifikátory slúžia na odkazovanie na premenné a iné programové entity, operátory definujú operácie a vzťahy medzi operandmi a operandy predstavujú hodnoty, s ktorými sa operácie vykonávajú.
+
+    príklady syntakticky korektných deklarácií a definícií premenných a príkazov s vysvetlením:
+
+        - Deklarácia premennej:
+            extern int x; // Deklarácia premennej x
+    
+        Tento príklad deklaruje premennú x typu int pomocou kľúčového slova extern. Deklarácia informuje kompilátor o existencii premennej x, ale nealokuje pre ňu pamäť.
+
+        - Definícia premennej:
+            int x = 5; // Definícia premennej x s počiatočnou hodnotou 5
+        Tento príklad definuje premennú x typu int a alokuje pre ňu pamäť. Premennej x sa priradí počiatočná hodnota 5.
+
+        - Príklad výrazu:
+            int sum = x + y; // Výraz s operátorom "+"
+        V tomto príklade je použitý operátor "+" na sčítanie hodnôt premenných x a y. Výsledná hodnota je priradená premennej sum.
+
+        - Príklad príkazu:
+            if (x > y) {
+                printf("x is greater than y\n");
+            } else {
+                printf("x is not greater than y\n");
+            }
+        Tento príklad ukazuje príkaz if-else, ktorý porovnáva hodnoty premenných x a y. Ak je podmienka x > y pravdivá, vypíše sa správa "x is greater than y". V opačnom prípade sa vypíše správa "x is not greater than y".
+
+    V týchto príkladoch sa využívajú identifikátory (napríklad premenné x a y), operátory (napríklad "+" a ">") a operandy (hodnoty premenných), ktoré spolu tvoria výrazy a príkazy v jazyku C.
+
+6. V jazyku C existuje určité poradie operácií vo výrazoch, ktoré sa riadi podľa priorit a asociativity operátorov. Tu je vymenované a vysvetlené poradie operácií vo výrazových príkazoch:
+
+        - Zátvorky: Výrazy uzavreté v zátvorkách majú najvyššiu prioritu a vykonávajú sa ako prvé. Zátvorky slúžia na presné určenie poradia vykonávania operácií vo výrazoch.
+            Príklad: (a + b) * c
+
+        - Unárne operátory: Unárne operátory pracujú s jedným operandom a majú vyššiu prioritu ako binárne operátory. Príkladom unárneho operátora je negácia -, ktorá mení znamienko operandu.
+            Príklad: -x
+
+        - Násobenie, delenie a zvyšok po delení: Operátory *, / a % majú rovnakú prioritu a vykonávajú sa zľava doprava.
+            Príklad: a * b / c
+
+        - Sčítanie a odčítanie: Operátory + a - majú rovnakú prioritu a vykonávajú sa zľava doprava.
+            Príklad: a + b - c
+
+        - Porovnávanie: Relačné operátory ako >, <, >=, <=, == a != porovnávajú hodnoty a vracajú logickú hodnotu true alebo false. Majú rovnakú prioritu.
+            Príklad: a > b
+
+        - Logické operátory: Logické operátory && (AND), || (OR) a ! (NOT) vykonávajú logické operácie nad operandmi. Operátor ! je unárny, zatiaľ čo && a || sú binárne operátory.
+            Príklad: a && b
+
+    Zdôvodnenie poradia operácií je založené na matematických pravidlách a zvyklostiach, ktoré zabezpečujú správne vyhodnotenie výrazov. Toto poradie operácií umožňuje programátorom vytvárať výrazy s jasným a predvídateľným správaním.
+
+7.  Aritmetické operátory:
+        - Sčítanie: + - sčíta hodnoty dvoch operandov.
+            Príklad: int result = 2 + 3; // result bude mať hodnotu 5
+        - Odčítanie: - - odčíta hodnotu druhého operandu od hodnoty prvého operandu.
+            Príklad: int result = 5 - 2; // result bude mať hodnotu 3
+        - Násobenie: * - vynásobí hodnoty dvoch operandov.
+            Príklad: int result = 2 * 3; // result bude mať hodnotu 6
+        - Delenie: / - vydelí hodnotu prvého operandu hodnotou druhého operandu.
+            Príklad: int result = 10 / 3; // result bude mať hodnotu 3 (celočíselné delenie)
+        - Zvyšok po delení: % - vráti zvyšok po delení hodnoty prvého operandu hodnotou druhého operandu.
+            Príklad: int result = 10 % 3; // result bude mať hodnotu 1
+    
+    Relačné operátory:
+        - Väčší ako: > - porovnáva, či je hodnota prvého operandu väčšia ako hodnota druhého operandu. Vráti logickú hodnotu true (nenulovú) ak je podmienka splnená, inak vráti logickú hodnotu false (nulu).
+            Príklad: bool result = 5 > 3; // result bude mať hodnotu true
+        - Menší ako: < - porovnáva, či je hodnota prvého operandu menšia ako hodnota druhého operandu.
+        - Väčší alebo rovný: >= - porovnáva, či je hodnota prvého operandu väčšia alebo rovná hodnote druhého operandu.
+        - Menší alebo rovný: <= - porovnáva, či je hodnota prvého operandu menšia alebo rovná hodnote druhého operandu.
+        - Rovný: == - porovnáva, či sú hodnoty oboch operandov rovnaké.
+        - Nerovný: != - porovnáva, či sú hodnoty oboch operandov rôzne.
+    
+    Logické operátory:
+        - Logický AND: && - vykoná logickú konjunkciu dvoch podmienok. Vráti logickú hodnotu true, ak sú obe podmienky true, inak vráti logickú hodnotu false.
+        - Logický OR: || - vykoná logickú disjunkciu dvoch podmienok. Vráti logickú hodnotu true, ak je aspoň jedna z podmienok true, inak vráti logickú hodnotu false.
+        - Logická negácia: ! - neguje logickú hodnotu operandu. Ak je operand true, vráti false, ak je operand false, vráti true.
+            int x = 5;
+            int y = 3;
+            bool result1 = (x > y) && (x != 0);  // result1 bude mať hodnotu true, pretože obe podmienky sú splnené
+            bool result2 = (x < y) || (x == 0);  // result2 bude mať hodnotu false, pretože ani jedna z podmienok nie je splnená
+            bool result3 = !(x > y);             // result3 bude mať hodnotu false, pretože výraz (x > y) je pôvodne true a je negovaný
+    
+    Inkrementačné a dekrementačné operátory:
+        - Inkrementácia: ++ - zvýši hodnotu premennej o 1.
+        - Dekrementácia: -- - zníži hodnotu premennej o 1.
+            int x = 5;
+            x++;  // hodnota premennej x sa zvýši na 6
+            int y = 10;
+            y--;  // hodnota premennej y sa zníži na 9
+    
+    Bitové operátory:
+        - Bitový AND: & - vykoná bitový AND medzi jednotlivými bitmi dvoch operandov.
+        - Bitový OR: | - vykoná bitový OR medzi jednotlivými bitmi dvoch operandov.
+        - Bitový XOR: ^ - vykoná bitový exkluzívny OR medzi jednotlivými bitmi dvoch operandov.
+        - Bitová negácia: ~ - neguje jednotlivé bity operandu.
+            int x = 5;     // binárne: 00000101
+            int y = 3;     // binárne: 00000011
+            int result1 = x & y;  // result1 bude mať hodnotu 1 (binárne: 00000001)
+            int result2 = x | y;  // result2 bude mať hodnotu 7 (binárne: 00000111)
+            int result3 = x ^ y;  // result3 bude mať hodnotu 6 (binárne: 00000110)
+            int result4 = ~x;     // result4 bude mať hodnotu -6 (binárne: 11111010)
+
+    Operátory bitového posuvu:
+        - Bitový posun vľavo: << - posunie bity v hodnote operandu vľavo o určitý počet pozícií.
+        - Bitový posun vpravo: >> - posunie bity v hodnote operandu vpravo o určitý počet pozícií.
+            int x = 5;     // binárne: 00000101
+            int result1 = x << 2;  // result1 bude mať hodnotu 20 (binárne: 
+            int result2 = x >> 1; // result2 bude mať hodnotu 2 (binárne: 00000010)
+
+    Zložené operátory priradenia:
+        - Priradenie sčítania: `+=` - sčíta hodnotu druhého operandu s hodnotou prvej premennej a výsledok priradí prvej premennej.
+        - Priradenie odčítania: `-=`
+        - Priradenie násobenia: `*=`
+        - Priradenie delenia: `/=`
+        - Priradenie zvyšku po delení: `%=`
+        - Priradenie bitového AND: `&=`
+        - Priradenie bitového OR: `|=`
+        - Priradenie bitového XOR: `^=`
+        - Priradenie bitového posunu vľavo: `<<=`
+        - Priradenie bitového posunu vpravo: `>>=`
+            int x = 5;
+            x += 3;  // hodnota premennej x sa zvýši o 3, x bude mať hodnotu 8
+            int y = 10;
+            y -= 4;  // hodnota premennej y sa zníži o 4, y bude mať hodnotu 6
+    Tieto príklady ukazujú syntakticky korektné príkazy, ktoré využívajú rôzne operátory v C jazyku. Každý operátor má svoju špecifickú funkciu a vracia hodnotu podľa toho, ako je definovaný.
+
+10. 
+    Ternárny operátor `? :` (známy aj ako "ternárny podmienený operátor" alebo "ternárny if-else operátor") je špeciálny operátor v jazyku C, ktorý umožňuje skrátenú formu podmienenej voľby medzi dvoma hodnotami alebo výrazmi. Jeho syntax je nasledovná:
+        podmienka ? hodnota1 : hodnota2
+    Fungovanie tohto operátora je nasledovné: Najskôr sa vyhodnotí podmienka. Ak je podmienka splnená (hodnota je `true` alebo nenulová), vráti sa hodnota `hodnota1`. Ak podmienka nie je splnená (hodnota je `false` alebo nulová), vráti sa hodnota `hodnota2`.
+    Ternárny operátor je užitočný pri jednoduchých rozhodovacích štruktúrach, kde sa vyberá medzi dvoma alternatívami na základe podmienky. Je to efektívny spôsob zápisu podmienených príkazov.
+
+    Príklady syntakticky korektných príkazov používajúcich ternárny operátor:
+        int x = 10;
+        int y = 5;
+        int result = (x > y) ? x : y;
+    V tomto príklade je podmienka `(x > y)` vyhodnotená na `true`, pretože hodnota premennej `x` je väčšia ako hodnota premennej `y`. Preto sa ako výsledok vráti hodnota `x` a premenná `result` bude mať hodnotu 10.
+        int a = 7;
+        int b = 3;
+        int absoluteDifference = (a > b) ? (a - b) : (b - a);
+    V tomto príklade je podmienka `(a > b)` vyhodnotená na `true`. Pretože podmienka je splnená, ako výsledok sa vráti hodnota `(a - b)` a premenná `absoluteDifference` bude mať hodnotu 4.
+
+11. Break, continue, goto, a return sú príkazy skoku v C. 
+        Break rýchlo ukonči cykly, ako sú for, while a do-while, vytiahnu riadenie z cyklu a začnú vykonávať nasledujúci blok. Ukončuje aj príkaz switch.
+        
+        Continue pozastaví alebo zmení tok riadenia počas vykonávania programu. Continue sa najčastejšie vyskytuje v cykloch. Namiesto ukončenia cyklu pozastaví vykonávanie príkazov pod ním a postúpi na ďalšiu iteráciu.
+
+        Príkaz goto je podobný príkazu continue v príkaze jump v jazyku C, ale príkaz continue možno použiť len v cykloch, zatiaľ čo príkaz Goto možno použiť kdekoľvek v kóde. Príkaz continue preskočí aktuálnu iteráciu cyklu a prejde na ďalšiu iteráciu, zatiaľ čo príkaz goto nám umožňuje určiť, kam má riadenie po preskočení prejsť.
+
+        Príkaz return je príkaz toku riadenia v programovaní, ktorý sa používa na ukončenie funkcie a vrátenie hodnoty späť volajúcemu. 
+
+12. Polia sa používajú na uloženie viacerých hodnôt v jednej premennej namiesto deklarovania samostatných premenných pre každú hodnotu. Statické pole obsahuje hodnotu typu. Premenná dynamického poľa uchováva ukazovateľ na hodnotu poľa.
+    Dovolené operácie:
+        Priraďovanie do/z prvkov poľa:
+            a[1] = 5; c = a[1];
+        Inicalizácia poľa
+            int a[5] = {5, 9, 3, 4, 1};
+    Nepovolené operácie:
+        Priraďovanie celého poľa:
+            int x[5], y[5]; y = x;
+        Pri práci s poľom sa musia operácie robiť s prvkami poľa a nie s poľom!
+    Nebezpečné
+        Indexovanie mimo rozsah poľa:
+            int a[5]; a[6] = 8;
+    
+    Príklady: int a[2]; int b[3][4];
+
+13.     V jazyku C reťazce reprezentujeme pomocou znakových polí (char arrays) a používame špeciálny znak '\0' (nulový znak) na označenie konca reťazca. Neexistuje špecifický dátový typ pre reťazce v jazyku C, ale reťazce sú jednoducho reprezentované ako znakové polia s ukončovacím znakom '\0' na konci.
+    
+    Príklady syntakticky korektných príkazov vytvárajúcich znakové polia a napĺňajúcich ich reťazcami:
+
+        char hello[] = "Hello, World!";  // vytvorenie znakového poľa s reťazcom "Hello, World!"
+        char name[20];                   // vytvorenie znakového poľa pre uloženie mena
+        strcpy(name, "John");            // naplnenie znakového poľa menom "John"
+
+    V tomto príklade sme vytvorili znakové pole hello a naplnili ho reťazcom "Hello, World!". Ďalšie znakové pole name sme vytvorili s kapacitou 20 znakov a potom sme ho naplnili menom "John" pomocou funkcie strcpy().
+
+    Pre prácu s reťazcami v jazyku C existuje niekoľko knižničných funkcií. Dve z týchto funkcií sú:
+
+        - strlen(): Táto funkcia slúži na zistenie dĺžky reťazca. Príjme ukazovateľ na začiatok reťazca a vráti počet znakov pred nulovým znakom.
+            char text[] = "Hello";
+            int length = strlen(text);  // length bude mať hodnotu 5
+        
+        - strcmp(): Táto funkcia slúži na porovnanie dvoch reťazcov. Vráti hodnotu 0, ak sú reťazce rovnaké, hodnotu menšiu ako 0, ak je prvý reťazec lexikograficky menší ako druhý, a hodnotu väčšiu ako 0, ak je prvý reťazec lexikograficky väčší ako druhý.
+            char str1[] = "apple";
+            char str2[] = "banana";
+            int result = strcmp(str1, str2);
+            // result bude mať hodnotu menšiu ako 0, pretože "apple" je lexikograficky menšie ako "banana"
+    
+    Tieto funkcie sú súčasťou štandardnej knižnice jazyka C (string.h) a slúžia na jednoduché manipulácie s reťazcami, ako je zisťovanie dĺžky reťazca alebo porovnávanie reťazcov.
+
+14. 
+    Dynamické pole v jazyku C je pole, ktorého veľkosť môže byť dynamicky alokovaná počas behu programu. Má nasledujúce vlastnosti:
+
+    Veľkosť môže byť určená počas behu programu: Dynamické pole umožňuje určiť jeho veľkosť na základe aktuálnych potrieb programu. Toto sa odlišuje od statického poľa, ktoré má pevne stanovenú veľkosť pri deklarácii.
+
+    Alokácia pamäte pomocou funkcie malloc(): Dynamické pole sa vytvára pomocou funkcie malloc(), ktorá alokuje určený počet bajtov pamäte a vráti ukazovateľ na začiatok alokovanej oblasti. Táto alokovaná pamäť je umiestnená na heap pamäti a zostáva platná, kým ju neuvolníme pomocou funkcie free().
+
+    Flexibilita pri menení veľkosti: Dynamické pole môže byť ľubovoľne menené počas behu programu. Môžeme zvýšiť alebo znížiť jeho veľkosť pomocou funkcie realloc(), ktorá presunie obsah existujúceho poľa do nového miesta v pamäti s aktualizovanou veľkosťou.
+
+    Príklady syntakticky korektných deklarácií a definícií dynamických polí:
+
+        - Deklarácia a definícia 1-rozmerného dynamického poľa:
+            int* dynamicArray;  // Deklarácia ukazovateľa na int
+            int size = 10;
+            dynamicArray = (int*)malloc(size * sizeof(int));  // Alokácia pamäte pre 10 celočíselných prvkov
+
+        - Deklarácia a definícia 2-rozmerného dynamického poľa:
+            int** dynamicMatrix;  // Deklarácia ukazovateľa na ukazovateľ na int
+            int rows = 5;
+            int cols = 3;
+            dynamicMatrix = (int**)malloc(rows * sizeof(int*));  // Alokácia pamäte pre riadky
+            for (int i = 0; i < rows; i++) {
+                dynamicMatrix[i] = (int*)malloc(cols * sizeof(int));  // Alokácia pamäte pre stĺpce v každom riadku
+            }
+
+        - Deklarácia a definícia nepravidelného dynamického poľa:
+            int** jaggedArray;  // Deklarácia ukazovateľa na ukazovateľ na int
+            int rows = 4;
+            jaggedArray = (int**)malloc(rows * sizeof(int*));  // Alokácia pamäte pre riadky
+            jaggedArray[0] = (int*)malloc(2 * sizeof(int));  // Alokácia pamäte pre prvý riadok s 2 prvkami
+            jaggedArray[1] = (int*)malloc(5 * sizeof(int)); // Alokácia pamäte pre druhý riadok s 5 prvkami
+            
+        
+    Pri práci s dynamickými poliami sa často používajú nasledujúce knižničné funkcie:
+        - `malloc()`: Slúži na alokáciu pamäte pre dynamické pole. Príjme veľkosť v bajtoch a vráti ukazovateľ na začiatok alokovanej pamäte.
+        - `calloc()`: Podobná funkcia ako `malloc()`, ale okrem alokácie pamäte aj inicializuje všetky jej bajty na nulu. Príjme veľkosť a počet prvkov a vráti ukazovateľ na začiatok alokovanej pamäte.
+        - `realloc()`: Slúži na zmenu veľkosti existujúceho dynamického poľa. Príjme ukazovateľ na existujúce pole, novú veľkosť v bajtoch a vráti ukazovateľ na začiatok aktualizovanej pamäte.
+        - `free()`: Uvoľňuje pamäť, ktorá bola alokovaná pre dynamické pole. Príjme ukazovateľ na začiatok alokovanej pamäte.
+
+    Tieto funkcie sú súčasťou štandardnej knižnice jazyka C (stdlib.h) a umožňujú správu dynamických polí v pamäti počas behu programu.
+
+
+15. 
+    Ukazovateľ (smerník) je premenná, ktorá obsahuje adresu v pamäti iného objektu alebo funkcie. Umožňuje nám pracovať s hodnotami a dátovými štruktúrami cez ich adresy. V jazyku C existujú dva typy ukazovateľov: typový ukazovateľ a netypový ukazovateľ (známy aj ako "prázdny" ukazovateľ).
+
+    Typový ukazovateľ: Typový ukazovateľ je ukazovateľ, ktorý je viazaný na konkrétny dátový typ. Ukazuje na objekt alebo funkciu s daným typom. Použitie typového ukazovateľa nám umožňuje správne interpretovať hodnoty uložené na danej adrese a pracovať s nimi podľa daného typu.
+    Príklad deklarácie a inicializácie typového ukazovateľa:
+
+        int* ptr;  // Deklarácia typového ukazovateľa na celočíselnú premennú
+        int num = 5;
+        ptr = &num;  // Inicializácia ukazovateľa ptr adresou premennej num
+
+    Netypový ukazovateľ („prázdny“ ukazovateľ): Netypový ukazovateľ je ukazovateľ, ktorý nie je viazaný na žiadny konkrétny typ. Tento typ ukazovateľa je definovaný ako void*. Netypový ukazovateľ môže byť inicializovaný s adresou akéhokoľvek objektu alebo funkcie bez ohľadu na ich typ. Pre použitie takéhoto ukazovateľa je potrebné ho konvertovať na vhodný typ ukazovateľa pred jeho použitím.
+    Príklad deklarácie a inicializácie netypového ukazovateľa:
+
+        void* ptr;  // Deklarácia netypového ukazovateľa
+        int num = 5;
+        ptr = &num;  // Inicializácia netypového ukazovateľa s adresou premennej num
+
+    Pri deklarácii ukazovateľa sa definuje jeho typ a meno. Pri inicializácii ukazovateľa mu priraďujeme konkrétnu adresu pomocou operátora & (adresový operátor) a názvu objektu alebo funkcie.
+    Je dôležité si uvedomiť, že inicializácia ukazovateľa nie je povinná pri jeho deklarácii. V takom prípade bude obsahovať neznámu hodnotu, tzv. náhodnú adresu, ktorá môže spôsobiť nežiaduce správanie programu. Preto je vždy vhodné inicializovať ukazovateľ na nulu (NULL) alebo vhodnou platnou adresou, ak nie je inak definované.
+
+16.
+    V jazyku C existuje vzťah medzi identifikátorom 1-rozmerného poľa a jeho ukazovateľom. Pri deklarácii 1-rozmerného poľa je identifikátor poľa vlastne ukazovateľ na jeho prvý prvok. To znamená, že ak máme deklarované pole s identifikátorom arr, potom arr je ukazovateľ na prvý prvok tohto poľa.
+
+    Tento vzťah nám umožňuje pristupovať k jednotlivým prvkom poľa pomocou ukazovateľa a operátora indexovania []. Ak máme deklarované pole arr, potom môžeme pristupovať k jeho prvkom napríklad pomocou arr[0], arr[1], atď. Toto sa dá rovnako dosiahnuť aj pomocou ukazovateľa na prvý prvok a aritmetiky ukazovateľov. Napríklad ak máme ukazovateľ ptr na prvý prvok poľa, môžeme pristupovať k jeho prvkom pomocou *(ptr + 0), *(ptr + 1), atď.
+
+    Tu je príklad, ktorý ukazuje vzťah medzi identifikátorom poľa a jeho ukazovateľom:
+        int arr[5] = {1, 2, 3, 4, 5};  // Deklarácia 1-rozmerného poľa
+        int *ptr = arr;  // Priradenie ukazovateľa na prvý prvok poľa
+        // Prístup k prvým dvom prvko<|endoftext|>
+
+17. 
+    Operátor dereferencie (*) je unárny operátor v jazykoch C a C++, ktorý sa používa na získanie hodnoty, na ktorú ukazuje daný ukazovateľ.
+    Syntakticky korektné použitie operátora dereferencie je nasledujúce:
+        int a = 10;
+        int* ptr = &a;
+        int b = *ptr;
+    V tomto príklade sme najprv vytvorili premennú a a potom sme vytvorili ukazovateľ ptr, ktorý ukazuje na túto premennú.
+
+    Následne sme pomocou operátora dereferencie (*) získali hodnotu, na ktorú ukazuje ukazovateľ ptr a priradili sme ju do premennej b. Výsledkom bude hodnota 10, pretože sme získali hodnotu, ktorá je uložená v pamäti na adrese ptr.
+
+    Týmto spôsobom môžeme získavať hodnoty z pamäte, na ktoré ukazujú ukazovatele, a pracovať s nimi v našom kóde.
+
+18. 
+    Funkcia v jazyku C je blok kódu, ktorý má určitý názov a môže prijímať argumenty (vstupné hodnoty) a vracať hodnoty (výstupné hodnoty). Funkcie umožňujú programátorom oddeliť jednotlivé časti kódu a zjednodušiť ich prácu, keďže kód môže byť opakovane použitý a prehľadne zorganizovaný.
+
+    Výhody používania funkcií v programoch v jazyku C zahŕňajú:
+        - Opakovane použiteľnosť kódu: Funkcie môžu byť volané z rôznych častí programu, čo umožňuje opakovane použiť rovnaký kód.
+        - Čitateľnosť kódu: Používanie funkcií môže zvýšiť prehľadnosť kódu, keďže každá funkcia má definovanú jednu úlohu.
+        - Zjednodušenie údržby: Funkcie umožňujú izolovať chyby a ich opravy, keďže chyba sa zväčša nachádza iba v jednej funkcii.
+        - Používanie funkcií je jedným z hlavných znakov procedurálnej programovacej paradigmy. V rámci tejto paradigmy sú programy organizované do funkcií, ktoré volajú ďalšie funkcie, čím vytvárajú hierarchiu volania.
+
+    C funkcie sa zvyčajne delia na:
+        - Vstavané funkcie (napr. funkcie pre prácu s reťazcami, konverziu čísel a pod.)
+        - Funkcie definované používateľom (napr. funkcie, ktoré sa používajú na spracovanie dát alebo na riešenie určitého problému)
+    
+    Príklady definícií a volaní jednoduchých C funkcií:
+        - Funkcia bez argumentov a návratovej hodnoty:
+            void print_hello() {
+                printf("Hello!\n");
+            }
+
+            int main() {
+                print_hello();
+                return 0;
+            }
+        Táto funkcia vypíše reťazec "Hello!" na obrazovku. Funkcia nemá žiadne argumenty a nevracia žiadnu hodnotu. V hlavnej funkcii main sa funkcia volá jednoducho volaním názvu funkcie.
+
+        - Funkcia s argumentmi a návratovou hodnotou:
+            int add_numbers(int a, int b) {
+                return a + b;
+            }
+
+            int main() {
+                int sum = add_numbers(5, 3);
+                printf("The sum is %d\n", sum);
+                return 0;
+            }
+        Táto funkcia prijíma dve celé čísla ako argumenty a vracia ich súčet ako návratovú hodnotu.
+        V hlavnej funkcii main je návratová hodnota funkcie priradená do premennej sum a potom je vypísaná na obrazovku.
+
+19. 
+    Lokálne a globálne premenné sú dva základné typy premenných v jazyku C a majú rôzne rozsahy platnosti v rámci programu.
+
+    Lokálne premenné sú deklarované vnútri tela funkcie a majú obmedzený rozsah platnosti. To znamená, že sú prístupné len zvnútra danej funkcie, v ktorej boli deklarované. Ich platnosť začína v okamihu, keď je program vykonávaný v danej funkcii, a končí pri jej ukončení. Lokálne premenné sa zvyčajne používajú na uchovávanie dočasných hodnôt alebo premenných, ktoré majú byť viditeľné iba v rámci daného bloku kódu.
+
+    Príklad syntakticky korektného použitia lokálnej premennej:
+
+        void myFunction() {
+            int x = 10; // lokálna premenná x
+            printf("Value of x: %d\n", x);
+        }
+
+        int main() {
+            myFunction();
+            // printf("Value of x: %d\n", x); // chyba: premenná x nie je viditeľná v hlavnej funkcii
+            return 0;
+        }
+    V tomto príklade je premenná x deklarovaná ako lokálna premenná vo funkcii myFunction(). Jej platnosť sa obmedzuje iba na túto funkciu, takže nie je viditeľná v hlavnej funkcii main(). Ak by sme sa pokúsili použiť premennú x mimo funkcie myFunction(), spôsobilo by to chybu kompilácie.
+
+    Na druhej strane, globálne premenné sú deklarované mimo akýchkoľvek funkcií a sú prístupné z celej oblasti kódu. Ich platnosť sa začína na začiatku programu a končí až pri jeho ukončení. Globálne premenné sa zvyčajne používajú na uchovávanie hodnôt, ktoré majú byť zdieľané medzi rôznymi časťami programu.
+
+    Príklad syntakticky korektného použitia globálnej premennej:
+
+        #include <stdio.h>
+
+        int globalVar = 5; // globálna premenná globalVar
+
+        void myFunction() {
+            printf("Value of globalVar: %d\n", globalVar);
+        }
+
+        int main() {
+            printf("Value of globalVar: %d\n", globalVar);
+            myFunction();
+            return 0;
+        }
+    V tomto príklade je premenná globalVar deklarovaná ako globálna premenná mimo všetkých funkcií. Môže byť prístupná a používaná v celej oblasti kódu, vrátane funkcií main() a myFunction().
+
+20. 
+    Parametre funkcie sú premenné, ktoré slúžia na prenos hodnôt alebo adries dát medzi volajúcou časťou programu a telom funkcie. Parametre definujú, aké vstupné hodnoty alebo adresy očakáva funkcia pre správne vykonanie svojho úlohu.
+
+    Parametre funkcie slúžia na prenos hodnôt alebo adries z volajúcej časti programu do tela funkcie. Existujú dva spôsoby odovzdávania parametrov do volania funkcie:
+
+    - Odovzdávanie parametrov prostredníctvom hodnoty (tzv. "call by value"): Pri tomto spôsobe sa hodnoty parametrov kopírujú do nových lokálnych premenných vo vnútri tela funkcie. Zmeny vykonané na týchto lokálnych premenných nemajú vplyv na pôvodné hodnoty v volajúcej časti programu. Tento spôsob je najbežnejší a implicitný v jazyku C.
+    Príklad syntakticky korektnej definície a volania funkcie s parametrami odovzdanými prostredníctvom hodnoty:
+        #include <stdio.h>
+
+        void myFunction(int x, int y) {
+            x = x + 1;
+            y = y + 1;
+            printf("Inside myFunction: x = %d, y = %d\n", x, y);
+        }
+
+        int main() {
+            int a = 5;
+            int b = 10;
+            myFunction(a, b);
+            printf("Inside main: a = %d, b = %d\n", a, b);
+            return 0;
+        }
+    V tomto príklade sú hodnoty premenných a a b odovzdané do funkcie myFunction() prostredníctvom hodnoty. Zmeny, ktoré sa vykonajú na parametroch x a y vo vnútri funkcie, neovplyvnia pôvodné hodnoty a a b v hlavnej funkcii.
+
+    - Odovzdávanie parametrov prostredníctvom adresy (tzv. "call by reference"): Pri tomto spôsobe sa adresy parametrov odovzdávajú do funkcie. Funkcia môže potom priamo manipulovať s pôvodnými hodnotami tým, že pracuje s adresami parametrov.
+    Príklad syntakticky korektnej definície a volania funkcie s parametrami odovzdanými prostredníctvom adresy:
+        #include <stdio.h>
+
+        void swap(int *x, int *y) {
+            int temp = *x;
+            *x = *y;
+            *y = temp;
+        }
+
+        int main() {
+            int a = 5;
+            int b = 10;
+            printf("Before swap: a = %d, b = %d\n", a, b);
+            swap(&a, &b);
+            printf("After swap: a = %d, b = %d\n", a, b);
+            return 0;
+        }
+    
+    V tomto príklade sú adresy premenných a a b odovzdané do funkcie swap() prostredníctvom operátora &. Funkcia môže priamo meniť hodnoty premenných a a b tým, že pracuje s ich adresami.
+    Odovzdávanie parametrov prostredníctvom adresy umožňuje efektívne meniť hodnoty premenných v volajúcej časti programu pomocou funkcie.
+
+21.
+    Príkaz return sa používa na ukončenie vykonávania funkcie a vrátenie návratovej hodnoty späť do volajúcej časti programu. Tento príkaz je veľmi dôležitý v C, pretože umožňuje funkciám vrátiť výsledok svojho spracovania, ktorý môže byť ďalej použitý v programe.
+
+    Príklady syntakticky korektných použití príkazu return v rôznych druhoch funkcií:
+
+        - Funkcia s návratovým typom void:
+            void greet() {
+                printf("Hello, world!\n");
+                return; // ukončenie funkcie
+            }
+        V tejto funkcii greet() nie je potrebné vrátiť žiadnu hodnotu, preto je použitý príkaz return bez návratovej hodnoty.
+
+        - Funkcia s návratovým typom iným ako void:
+            int add(int a, int b) {
+                int sum = a + b;
+                return sum; // vrátenie súčtu premenných a a b
+            }
+        V tejto funkcii add() sa vykonáva sčítanie premenných a a b a výsledok sa vráti pomocou príkazu return.
+
+    Ak potrebujeme vytvoriť funkciu, ktorá vráti viac ako jednu hodnotu, môžeme využiť ukazovatele alebo štruktúru. Napríklad, môžeme definovať štruktúru, ktorá obsahuje viacero premenných a potom túto štruktúru vrátiť ako návratovú hodnotu funkcie.
+
+    Príklad definície a volania funkcie, ktorá vráti viacero hodnôt:
+
+        #include <stdio.h>
+
+        struct Point {
+            int x;
+            int y;
+        };
+
+        struct Point getPoint() {
+            struct Point p;
+            p.x = 10;
+            p.y = 20;
+            return p;
+        }
+
+        int main() {
+            struct Point result = getPoint();
+            printf("x = %d, y = %d\n", result.x, result.y);
+            return 0;
+        }
+    V tomto príklade funkcia getPoint() vytvára a inicializuje štruktúru Point a potom ju vráti ako návratovú hodnotu. V hlavnej funkcii main() je táto návratová hodnota priradená do premennej result a hodnoty x a y sú vypísané.
+
+22.
+    Dátový typ návratovej hodnoty funkcie určuje, aký typ hodnoty bude funkcia vracať ako výsledok svojho spracovania. Tento dátový typ je špecifikovaný pri definícii funkcie a je uvedený pred názvom funkcie.
+
+    Príklady syntakticky korektných použití dátového typu návratovej hodnoty funkcie:
+
+        - Funkcia s návratovým typom int:
+            int add(int a, int b) {
+                int sum = a + b;
+                return sum; // vrátenie súčtu premenných a a b
+            }
+        V tomto príklade je návratovým typom funkcie add() dátový typ int, čo znamená, že táto funkcia vráti celočíselnú hodnotu.
+
+        - Funkcia s návratovým typom float:
+            float divide(float a, float b) {
+                if (b != 0) {
+                    return a / b; // vrátenie podielu premenných a a b
+                } else {
+                    printf("Error: Division by zero\n");
+                    return 0.0; // vrátenie hodnoty 0 v prípade delenia nulou
+                }
+            }
+        V tomto príklade je návratovým typom funkcie divide() dátový typ float, čo znamená, že táto funkcia vráti desatinné číslo.
+
+    Dátový typ návratovej hodnoty funkcie je dôležitý, pretože určuje, aký typ hodnoty očakáva volajúca časť programu a ako bude táto hodnota spracovaná ďalej. Pri volaní funkcie môže byť návratová hodnota priradená do premennej alebo použitá pri ďalšom výpočte alebo rozhodovaní v programe.
+
+23. 
+    Vnárané volania funkcie sa používajú v prípade, keď v tele jednej funkcie voláme inú funkciu. Toto sa nazýva rekurzia, kedy funkcia volá sama seba.
+
+    V jazyku C nie je priamo obmedzený počet vnorených volaní funkcie. Limit je stanovený dostupnou pamäťou na zásobníku (stack), kde sa ukladajú lokálne premenné a informácie o volaniach funkcií. Ak je dostupná pamäť vyčerpaná, môže dôjsť k pretečeniu zásobníka (stack overflow) a program môže spadnúť.
+
+    Syntakticky korektný príklad definície funkcie s vnoreným volaním je nasledovný:
+        int factorial(int n) {
+            if (n == 0) {
+                return 1; // ukončovacia podmienka rekurzie
+            } else {
+                return n * factorial(n - 1); // vnorené volanie funkcie
+            }
+        }
+    V tomto príklade je funkcia factorial definovaná tak, že v tele funkcie sa volá sama seba s argumentom n - 1. Týmto spôsobom sa rekurzívne vypočíta faktoriál čísla n. Výsledok je postupne vynásobený s každým ďalším menším číslom až do dosiahnutia ukončovacej podmienky, kedy je vrátená hodnota 1. Týmto spôsobom sa postupne vrátia výsledky z vnorených volaní a výsledkom celého volania je faktoriál zadaného čísla n.
+
+24. 
+    Všetky programy vytvorené v jazyku C majú začiatočným bodom funkciu s názvom main(). Táto funkcia je povinnou súčasťou každého C programu a je spúšťaná ako prvá.
+
+    Syntakticky korektný príklad definície jednoduchej funkcie s návratovou hodnotou a volaním knižničnej funkcie môže vyzerať nasledovne:
+        #include <stdio.h>
+
+        int multiply(int a, int b) {
+            int result = a * b;
+            return result;
+        }
+
+        int main() {
+            int x = 5;
+            int y = 3;
+            int product = multiply(x, y);
+            printf("Product: %d\n", product);
+            return 0;
+        }
+    V tomto príklade je definovaná vlastná funkcia multiply(), ktorá prijíma dva parametre a a b a vracia ich súčin. Funkcia multiply() je potom volaná v tele funkcie main() s argumentami x a y. Návratová hodnota z multiply() je priradená do premennej product. Nakoniec je pomocou funkcie printf() vypísaný výsledok.
+
+    Reťaz volaní a spätné odovzdávanie si parametrov pri vracaní návratových hodnôt je nasledovný:
+
+    - Funkcia main() volá funkciu multiply(x, y) a prenáša jej hodnoty premenných x a y.
+    - V tele funkcie multiply() sa tieto hodnoty použijú na výpočet súčinu a návratová hodnota sa vráti volajúcej funkcii.
+    - Návratová hodnota z funkcie multiply() je priradená do premennej product v funkcii main().
+    - Premenná product sa použije na výpis výsledku pomocou printf().
+    - Týmto spôsobom sa hodnoty prenášajú medzi funkciami a výsledky sa vrátia späť k volajúcej funkcii.
+
+25.
+    Iteratívna a rekurzívna funkcia sú dva rôzne prístupy k riešeniu problémov v programovaní.
+
+    Iteratívna funkcia:
+
+        Iteratívna funkcia používa opakované cykly na opakovanie určitých krokov, kým nie je dosiahnutý požadovaný výsledok.
+        V iteratívnej funkcii je použitá priama kontrola toku programu pomocou cyklov, ako napríklad for alebo while.
+        Príklad iteratívnej funkcie na výpočet faktoriálu:
+            int factorial_iterative(int n) {
+                int result = 1;
+                for (int i = 1; i <= n; i++) {
+                    result *= i;
+                }
+                return result;
+            }
+        V tejto funkcii je použitý for cyklus na iteráciu cez čísla od 1 do n a výpočet faktoriálu.
+
+    Rekurzívna funkcia:
+
+        Rekurzívna funkcia je funkcia, ktorá volá sama seba v rámci svojho telového kódu.
+        V rekurzívnej funkcii je problém rozdelený na menšie podproblémy, ktoré sú riešené volaním tej istej funkcie s novými parametrami.
+        Rekurzívna funkcia obsahuje podmienku ukončenia, tzv. základný prípad, ktorý zastaví rekurzi.
+        Príklad rekurzívnej funkcie na výpočet faktoriálu:
+            int factorial_recursive(int n) {
+                if (n == 0) {
+                    return 1;  // základný prípad
+                }
+                return n * factorial_recursive(n - 1);  // rekurzívne volanie
+            }
+        V tejto funkcii sa volanie factorial_recursive(n - 1) vyskytuje v tele tej istej funkcie. Rekurzívne volanie sa opakuje, pričom sa postupne znižuje hodnota argumentu n, až kým nie je dosiahnutý základný prípad n == 0.
+
+    Oba tieto prístupy majú svoje výhody a nevýhody. Iteratívne funkcie majú často jednoduchšiu štruktúru a môžu byť efektívnejšie z hľadiska výkonu. Rekurzívne funkcie môžu mať jednoduchšiu a elegantnejšiu implementáciu niektorých algoritmov a často umožňujú lepšie porozumenie a čitateľnosť kódu.
+
+    Použitie iteratívnej alebo rekurzívnej funkcie závisí od konkrétneho problému a preferencií programátora.
+
+26. V jazyku C existujú dva hlavné druhy rekurzie: priama rekurzia a nepriama (alebo vzájomná) rekurzia.
+
+        1. Priama rekurzia:
+        Pri priamej rekurzii je funkcia volaná sama seba. Tento typ rekurzie je najbežnejší a často sa používa na riešenie problémov, ktoré majú prirodzenú rekurzívnu štruktúru. Príklad priamej rekurzie je faktoriálová funkcia.
+
+        c
+        unsigned int factorial(unsigned int n) {
+            if (n == 0) {
+                return 1;
+            } else {
+                return n * factorial(n - 1);
+            }
+        }
+
+        int main() {
+            unsigned int number = 5;
+            unsigned int result = factorial(number);
+            printf("Factorial of %d is %d\n", number, result);
+            return 0;
+        }
+        
+
+        V tomto príklade je funkcia factorial() priamou rekurziou. Volá sa sama so zmenšeným argumentom n - 1 a vracia výsledok násobku n a factorial(n - 1). Rekurzia pokračuje, až kým sa nevyhodnotí podmienka ukončenia rekurzie n == 0. Výsledkom je výpočet faktoriálu čísla.
+
+        2. Nepriama (vzájomná) rekurzia:
+        Pri nepriamej rekurzii sa funkcie volajú navzájom v rámci skupiny funkcií. Každá funkcia v skupine volá inú funkciu a tie sa vzájomne volajú, až kým nedosiahnu určený výsledok. Príkladom nepriamej rekurzie môže byť výpočet Fibonacciho postupnosti.
+
+        c
+        unsigned int fibonacci(unsigned int n);
+
+        unsigned int fibonacciHelper(unsigned int n) {
+            if (n <= 1) {
+                return n;
+            } else {
+                return fibonacci(n - 1) + fibonacci(n - 2);
+            }
+        }
+
+        unsigned int fibonacci(unsigned int n) {
+            return fibonacciHelper(n);
+        }
+
+        int main() {
+            unsigned int number = 6;
+            unsigned int result = fibonacci(number);
+            printf("Fibonacci number at position %d is %d\n", number, result);
+            return 0;
+        }
+        
+
+        V tomto príklade sme implementovali nepriamu rekurziu na výpočet Fibonacciho postupnosti. Funkcia fibonacci() je hlavnou funkciou, ktorá volá pomocnú funkciu fibonacciHelper(). Pomocná funkcia rekurzívne volá fibonacci() pre predchádzajúce dva čísla a vracia ich sčítanie. Rekurzia pokračuje, až kým sa nedosiahne požadovaná pozícia postupnosti.
+
+        Tieto príklady ilustrujú implementáciu priamej a nepriamej rekurzie v jazyku C. V priame
+
+        j rekurzii je funkcia volaná sama seba, zatiaľ čo v nepriamej rekurzii funkcie navzájom volajú jedna druhú. Tieto techniky sa používajú na riešenie problémov, ktoré majú rekurzívnu štruktúru a vyžadujú opakovanie určitých operácií.
+
+27. 
+    Pre odovzdanie poľa do volania funkcie v jazyku C sa používa koncept ukazovateľov. Pole je v skutočnosti adresovaná sekvencia pamäťových buniek, takže odovzdávanie poľa do funkcie sa deje pomocou odovzdania ukazovateľa na prvý prvok poľa.
+
+    Syntakticky korektný príklad definície a volania funkcie s formálnym parametrom 1-rozmerného statického poľa je nasledovný:
+
+        #include <stdio.h>
+
+        void printArray(int arr[], int size) {
+            for (int i = 0; i < size; i++) {
+                printf("%d ", arr[i]);
+            }
+            printf("\n");
+        }
+
+        int main() {
+            int array[] = {1, 2, 3, 4, 5};
+            int length = sizeof(array) / sizeof(array[0]);
+
+            printArray(array, length);
+
+            return 0;
+        }
+
+    V tomto príklade sme definovali funkciu printArray(), ktorá prijíma 1-rozmerné statické pole arr a jeho veľkosť size ako parametre. V tele funkcie prechádzame cez prvky poľa a vypisujeme ich.
+
+    V main() sme vytvorili statické pole array obsahujúce čísla od 1 do 5. Následne sme vypočítali jeho veľkosť pomocou delenia celkového počtu bajtov poľa (sizeof(array)) a veľkosti jedného prvku poľa (sizeof(array[0])).
+
+    Nakoniec sme volali funkciu printArray() s argumentami array a length. V tomto volaní sme odovzdali ukazovateľ na prvý prvok poľa array a jeho veľkosť length.
+
+    Fungovanie tohto kódu spočíva v tom, že pri volaní funkcie printArray() odovzdávame ukazovateľ na prvý prvok poľa array a jeho veľkosť. V tele funkcie môžeme používať tento ukazovateľ na prístup k jednotlivým prvkov poľa a vykonávať požadované operácie s nimi. Výstupom je výpis hodnôt prvkov poľa.
+
+28.
+    V jazyku C je štruktúra (structure) definovaná ako zložený dátový typ, ktorý umožňuje kombinovať rôzne premenné rôznych typov do jedného celku. Štruktúra je zoskupenie premenných, nazývaných členovia (members), ktoré môžu mať rôzne typy.
+
+    Použitie štruktúr v programoch vytvorených v jazyku C poskytuje možnosť logického zoskupovania súvisiacich dát do jednej entity. To umožňuje lepšiu organizáciu a manipuláciu s údajmi. Štruktúry sú často používané na reprezentáciu zložitejších dátových štruktúr, ako napríklad záznamy, zoznamy, stromy a iné.
+
+    Na pristupovanie k vnútorným premenným štruktúrových premenných sa používa operátor bodky (.). Pomocou tohto operátora môžeme pristupovať k jednotlivým členom štruktúry a manipulovať s nimi.
+
+    Dovolené operácie so štruktúrovými premennými zahŕňajú priradenie, prístup k členom, porovnanie a pretypovanie. Nedovolené operácie zahŕňajú aritmetické operácie (sčítanie, odčítanie) a inkrementáciu/dekrementáciu štruktúry.
+
+    Syntakticky korektný príklad deklarácie štruktúry, jej použitia a vysvetlenie fungovania je nasledovný:
+
+        #include <stdio.h>
+
+        // Deklarácia štruktúry
+        struct Student {
+            char name[50];
+            int age;
+            float grade;
+        };
+
+        int main() {
+            // Vytvorenie inštancie štruktúry
+            struct Student student1;
+
+            // Priradenie hodnôt členom štruktúry
+            strcpy(student1.name, "John Doe");
+            student1.age = 20;
+            student1.grade = 8.5;
+
+            // Prístup k členom štruktúry a ich výpis
+            printf("Meno: %s\n", student1.name);
+            printf("Vek: %d\n", student1.age);
+            printf("Hodnota: %.2f\n", student1.grade);
+
+            return 0;
+        }
+
+    V tomto príklade sme deklarovali štruktúru Student, ktorá má tri členy: name typu char (reťazec), age typu int (celé číslo) a grade typu float (desatinné číslo). V main() sme vytvorili inštanciu tejto štruktúry s názvom student1. Potom sme priradili hod
+
+    noty k členom štruktúry pomocou operátora bodky (.). Nakoniec sme vypísali hodnoty týchto členov pomocou funkcie printf().
+
+    Tento príklad demonstruje vytvorenie, inicializáciu a použitie štruktúry v jazyku C.
+
+    29. V jazyku C je štruktúra (structure) definovaná ako zložený dátový typ, ktorý umožňuje kombinovať rôzne premenné rôznych typov do jedného celku. Štruktúra je zoskupenie premenných, nazývaných členovia (members), ktoré môžu mať rôzne typy.
+
+    Použitie štruktúr v programoch vytvorených v jazyku C poskytuje možnosť logického zoskupovania súvisiacich dát do jednej entity. To umožňuje lepšiu organizáciu a manipuláciu s údajmi. Štruktúry sú často používané na reprezentáciu zložitejších dátových štruktúr, ako napríklad záznamy, zoznamy, stromy a iné.
+
+    Na pristupovanie k vnútorným premenným štruktúrových premenných sa používa operátor bodky (.). Pomocou tohto operátora môžeme pristupovať k jednotlivým členom štruktúry a manipulovať s nimi.
+
+    Dovolené operácie so štruktúrovými premennými zahŕňajú priradenie, prístup k členom, porovnanie a pretypovanie. Nedovolené operácie zahŕňajú aritmetické operácie (sčítanie, odčítanie) a inkrementáciu/dekrementáciu štruktúry.
+
+    Syntakticky korektný príklad deklarácie štruktúry, jej použitia a vysvetlenie fungovania je nasledovný:
+
+        #include <stdio.h>
+
+        // Deklarácia štruktúry
+        struct Student {
+            char name[50];
+            int age;
+            float grade;
+        };
+
+        int main() {
+            // Vytvorenie inštancie štruktúry
+            struct Student student1;
+
+            // Priradenie hodnôt členom štruktúry
+            strcpy(student1.name, "John Doe");
+            student1.age = 20;
+            student1.grade = 8.5;
+
+            // Prístup k členom štruktúry a ich výpis
+            printf("Meno: %s\n", student1.name);
+            printf("Vek: %d\n", student1.age);
+            printf("Hodnota: %.2f\n", student1.grade);
+
+            return 0;
+        }
+
+    V tomto príklade sme deklarovali štruktúru Student, ktorá má tri členy: name typu char (reťazec), age typu int (celé číslo) a grade typu float (desatinné číslo). V main() sme vytvorili inštanciu tejto štruktúry s názvom student1. Potom sme priradili hod
+
+29. 
+    V jazyku C je štruktúra (structure) definovaná ako zložený dátový typ, ktorý umožňuje kombinovať rôzne premenné rôznych typov do jedného celku. Štruktúra je zoskupenie premenných, nazývaných členovia (members), ktoré môžu mať rôzne typy.
+
+    Použitie štruktúr v programoch vytvorených v jazyku C poskytuje možnosť logického zoskupovania súvisiacich dát do jednej entity. To umožňuje lepšiu organizáciu a manipuláciu s údajmi. Štruktúry sú často používané na reprezentáciu zložitejších dátových štruktúr, ako napríklad záznamy, zoznamy, stromy a iné.
+
+    Na pristupovanie k vnútorným premenným štruktúrových premenných sa používa operátor bodky (.). Pomocou tohto operátora môžeme pristupovať k jednotlivým členom štruktúry a manipulovať s nimi.
+
+    Dovolené operácie so štruktúrovými premennými zahŕňajú priradenie, prístup k členom, porovnanie a pretypovanie. Nedovolené operácie zahŕňajú aritmetické operácie (sčítanie, odčítanie) a inkrementáciu/dekrementáciu štruktúry.
+
+    Syntakticky korektný príklad deklarácie štruktúry, jej použitia a vysvetlenie fungovania je nasledovný:
+
+        #include <stdio.h>
+
+        // Deklarácia štruktúry
+        struct Student {
+            char name[50];
+            int age;
+            float grade;
+        };
+
+        int main() {
+            // Vytvorenie inštancie štruktúry
+            struct Student student1;
+
+            // Priradenie hodnôt členom štruktúry
+            strcpy(student1.name, "John Doe");
+            student1.age = 20;
+            student1.grade = 8.5;
+
+            // Prístup k členom štruktúry a ich výpis
+            printf("Meno: %s\n", student1.name);
+            printf("Vek: %d\n", student1.age);
+            printf("Hodnota: %.2f\n", student1.grade);
+
+            return 0;
+        }
+
+    V tomto príklade sme deklarovali štruktúru Student, ktorá má tri členy: name typu char (reťazec), age typu int (celé číslo) a grade typu float (desatinné číslo). V main() sme vytvorili inštanciu tejto štruktúry s názvom student1. Potom sme priradili hod
+
+30. 
+    V jazyku C existujú rôzne druhy konverzií typov, nazývané aj pretypovania. Medzi najčastejšie druhy patria:
+
+        - Implicitné pretypovanie (implicit type casting): Toto pretypovanie je vykonávané automaticky kompilátorom bez nutnosti výslovne ho uvádzať v kóde. V takom prípade dochádza k automatickej konverzii jedného typu na iný. Implicitné pretypovanie sa zvyčajne vykonáva pri operáciách, ktoré vyžadujú kompatibilné typy, ako napríklad aritmetické operácie s rôznymi typmi.
+        - Explicitné pretypovanie (explicit type casting): Toto pretypovanie je vykonávané explicitne programátorom a je závislé od konkrétnej syntaktickej štruktúry jazyka C. Pri explicitnom pretypovaní sa vyžaduje uvedenie cieľového typu, ku ktorému sa má hodnota pretypovať. Môže byť užitočné pri konverzii medzi rôznymi typmi, napríklad pri konverzii medzi celočíselnými a desatinnými typmi.
+
+    Pri vykonávaní konverzie typov v priraďovacích výrazoch platia nasledovné pravidlá:
+        - Pri implicitnom pretypovaní sa vykonáva automatická konverzia medzi kompatibilnými typmi. Napríklad, ak priraďujete hodnotu celého čísla do premennej s desatinným typom, kompilátor automaticky pretypuje hodnotu celého čísla na desatinné číslo.
+        - Pri explicitnom pretypovaní môžete v kóde použiť operátor pretypovania (typ) a vložiť cieľový typ medzi zátvorky. Tým môžete pretypovať hodnotu na iný typ. Treba si však dať pozor, pretože nesprávne použitie explicitného pretypovania môže viesť k nekonzistentným dátam alebo stratám presnosti.
+
+    Syntakticky korektný príklad implicitného pretypovania:
+
+        int a = 10;
+        double b = 3.14;
+        double result = a + b; // Implicitné pretypovanie a na double
+        printf("%f\n", result); // Vypíše 13.140000
+
+    V tomto príklade premenná a je typu int, premenná b je typu double a operácia sčítania vyžaduje rovnaký typ pre oba operandy. Kompilátor automaticky pretypuje hodnotu a na double pred vykonaním operácie sčítania.
+
+    Syntakticky korektný príklad explicitného pre typovania:
+        
+        int a = 10;
+        double b = 3.14;
+        int result = (int)(a + b); // Explicitné pretypovanie výsledku na int
+        printf("%d\n", result); // Vypíše 13
+
+    V tomto príklade výsledok operácie sčítania a + b je typu double, ale pomocou explicitného pretypovania sme ho premenili na int a priradili do premennej result. Výsledkom je celočíselná hodnota 13.
+
+31.
+    Práca s diskovými súbormi v programe vytvorených v jazyku C sa vykonáva pomocou dátového prúdu. Dátový prúd je reprezentovaný štruktúrou FILE, ktorá obsahuje informácie o súbore a aktuálnu pozíciu ukazovateľa v súbore. Dátový prúd slúži na zápis a čítanie údajov z diskového súboru.
+
+    V jazyku C môžeme pracovať s dátovým prúdom v nasledujúcich režimoch:
+
+        1.Režim zápisu (write mode): V tomto režime je možné zapísať údaje do diskového súboru. Ak súbor neexistuje, vytvorí sa. Ak súbor existuje, jeho pôvodný obsah sa prepíše novými údajmi.
+
+        2.Režim čítania (read mode): V tomto režime je možné čítať údaje z diskového súboru. Ak súbor neexistuje, operácia zlyhá. Ak súbor existuje, je možné čítať jeho obsah.
+
+        3.Režim pridávania (append mode): V tomto režime je možné pridávať údaje na koniec existujúceho súboru. Ak súbor neexistuje, vytvorí sa. Ak súbor existuje, nové údaje sa pridajú na koniec súboru bez prepisovania pôvodného obsahu.
+
+    Mód práce s diskovým súborom prostredníctvom dátového prúdu určuje, aké operácie môžeme s daným súborom vykonávať.
+
+    Syntakticky korektný príklad vytvorenia dátového prúdu spojeného s diskovým súborom a jeho použitia pre zápis do diskového súboru je nasledovný:
+
+        #include <stdio.h>
+
+        int main() {
+            FILE *file;
+            char data[] = "Toto je zapisovany text.";
+
+            // Otvorenie súboru pre zápis v režime "write mode"
+            file = fopen("subor.txt", "w");
+
+            if (file == NULL) {
+                printf("Nepodarilo sa otvoriť súbor.\n");
+                return 1;
+            }
+
+            // Zápis údajov do súboru
+            fprintf(file, "%s", data);
+
+            // Zatvorenie súboru
+            fclose(file);
+
+            printf("Údaje boli úspešne zapisované do súboru.\n");
+
+            return 0;
+        }
+
+    V tomto príklade sme vytvorili dátový prúd pomocou funkcie fopen(), ktorá vráti smerník na štruktúru FILE. Prvý parameter funkcie fopen() je názov súboru, ktorý chceme otvoriť, a druhý parameter je režim práce súboru. V príklade sme použili režim "w" pre zápis.
+
+    Ak je súbor úspešne otvorený, môžeme použiť funkciu fprintf(), ktorá zapisuje formátované údaje do súboru. V príklade sme zapisovali textový reťazec data do súboru pomocou fprintf(file, "%s", data);. Na konci sme zatvorili súbor pomocou funkcie fclose().
+
+    Celý príklad funguje tak, že otvorí súbor pre zápis, zapíše do neho textový reťazec a potom ho zatvorí. 
